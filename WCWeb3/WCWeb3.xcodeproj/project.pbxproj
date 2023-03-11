@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EABB39E929BC8ABF0085239C /* WCWeb3.docc in Sources */ = {isa = PBXBuildFile; fileRef = EABB39E829BC8ABF0085239C /* WCWeb3.docc */; };
-		EABB39EF29BC8ABF0085239C /* WCWeb3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABB39E429BC8ABF0085239C /* WCWeb3.framework */; };
-		EABB39F429BC8ABF0085239C /* WCWeb3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB39F329BC8ABF0085239C /* WCWeb3Tests.swift */; };
 		EABB39F529BC8ABF0085239C /* WCWeb3.h in Headers */ = {isa = PBXBuildFile; fileRef = EABB39E729BC8ABF0085239C /* WCWeb3.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EABB3A4D29BC8AD90085239C /* Web3+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB3A0029BC8AD80085239C /* Web3+PromiseKit.swift */; };
 		EABB3A4E29BC8AD90085239C /* Exports+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABB3A0129BC8AD80085239C /* Exports+PromiseKit.swift */; };
@@ -83,22 +81,10 @@
 		EABB3A9A29BC8B4F0085239C /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = EABB3A9929BC8B4F0085239C /* PromiseKit */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		EABB39F029BC8ABF0085239C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EABB39DB29BC8ABF0085239C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EABB39E329BC8ABF0085239C;
-			remoteInfo = WCWeb3;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		EABB39E429BC8ABF0085239C /* WCWeb3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WCWeb3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABB39E729BC8ABF0085239C /* WCWeb3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCWeb3.h; sourceTree = "<group>"; };
 		EABB39E829BC8ABF0085239C /* WCWeb3.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WCWeb3.docc; sourceTree = "<group>"; };
-		EABB39EE29BC8ABF0085239C /* WCWeb3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCWeb3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EABB39F329BC8ABF0085239C /* WCWeb3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCWeb3Tests.swift; sourceTree = "<group>"; };
 		EABB3A0029BC8AD80085239C /* Web3+PromiseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Web3+PromiseKit.swift"; sourceTree = "<group>"; };
 		EABB3A0129BC8AD80085239C /* Exports+PromiseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Exports+PromiseKit.swift"; sourceTree = "<group>"; };
 		EABB3A0229BC8AD80085239C /* Promisable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promisable.swift; sourceTree = "<group>"; };
@@ -179,14 +165,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EABB39EB29BC8ABF0085239C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EABB39EF29BC8ABF0085239C /* WCWeb3.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -194,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				EABB39E629BC8ABF0085239C /* WCWeb3 */,
-				EABB39F229BC8ABF0085239C /* WCWeb3Tests */,
 				EABB39E529BC8ABF0085239C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				EABB39E429BC8ABF0085239C /* WCWeb3.framework */,
-				EABB39EE29BC8ABF0085239C /* WCWeb3Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,14 +192,6 @@
 				EABB39E829BC8ABF0085239C /* WCWeb3.docc */,
 			);
 			path = WCWeb3;
-			sourceTree = "<group>";
-		};
-		EABB39F229BC8ABF0085239C /* WCWeb3Tests */ = {
-			isa = PBXGroup;
-			children = (
-				EABB39F329BC8ABF0085239C /* WCWeb3Tests.swift */,
-			);
-			path = WCWeb3Tests;
 			sourceTree = "<group>";
 		};
 		EABB39FE29BC8AD80085239C /* Sources */ = {
@@ -433,24 +401,6 @@
 			productReference = EABB39E429BC8ABF0085239C /* WCWeb3.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EABB39ED29BC8ABF0085239C /* WCWeb3Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EABB39FB29BC8ABF0085239C /* Build configuration list for PBXNativeTarget "WCWeb3Tests" */;
-			buildPhases = (
-				EABB39EA29BC8ABF0085239C /* Sources */,
-				EABB39EB29BC8ABF0085239C /* Frameworks */,
-				EABB39EC29BC8ABF0085239C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EABB39F129BC8ABF0085239C /* PBXTargetDependency */,
-			);
-			name = WCWeb3Tests;
-			productName = WCWeb3Tests;
-			productReference = EABB39EE29BC8ABF0085239C /* WCWeb3Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -462,9 +412,6 @@
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					EABB39E329BC8ABF0085239C = {
-						CreatedOnToolsVersion = 14.2;
-					};
-					EABB39ED29BC8ABF0085239C = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -489,20 +436,12 @@
 			projectRoot = "";
 			targets = (
 				EABB39E329BC8ABF0085239C /* WCWeb3 */,
-				EABB39ED29BC8ABF0085239C /* WCWeb3Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EABB39E229BC8ABF0085239C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EABB39EC29BC8ABF0085239C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -586,23 +525,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EABB39EA29BC8ABF0085239C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EABB39F429BC8ABF0085239C /* WCWeb3Tests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EABB39F129BC8ABF0085239C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EABB39E329BC8ABF0085239C /* WCWeb3 */;
-			targetProxy = EABB39F029BC8ABF0085239C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EABB39F629BC8ABF0085239C /* Debug */ = {
@@ -781,40 +704,6 @@
 			};
 			name = Release;
 		};
-		EABB39FC29BC8ABF0085239C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LLWMGH5W3M;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.calorie.WCWeb3Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		EABB39FD29BC8ABF0085239C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LLWMGH5W3M;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.calorie.WCWeb3Tests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -832,15 +721,6 @@
 			buildConfigurations = (
 				EABB39F929BC8ABF0085239C /* Debug */,
 				EABB39FA29BC8ABF0085239C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EABB39FB29BC8ABF0085239C /* Build configuration list for PBXNativeTarget "WCWeb3Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EABB39FC29BC8ABF0085239C /* Debug */,
-				EABB39FD29BC8ABF0085239C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

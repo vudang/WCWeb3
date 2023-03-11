@@ -3,15 +3,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "Web3",
+    name: "WCWeb3",
     platforms: [
        .iOS(.v10),
        .macOS(.v10_12)
     ],
     products: [
         .library(
-            name: "Web3",
-            targets: ["Web3"]),
+            name: "WCWeb3",
+            targets: ["WCWeb3"]),
         .library(
             name: "Web3PromiseKit",
             targets: ["Web3PromiseKit"]),
@@ -34,7 +34,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Web3",
+            name: "WCWeb3",
             dependencies: [
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
@@ -45,7 +45,7 @@ let package = Package(
         .target(
             name: "Web3PromiseKit",
             dependencies: [
-                .target(name: "Web3"),
+                .target(name: "WCWeb3"),
                 .product(name: "PromiseKit", package: "PromiseKit"),
             ],
             path: "Sources",
@@ -53,7 +53,7 @@ let package = Package(
         .target(
             name: "Web3ContractABI",
             dependencies: [
-                .target(name: "Web3"),
+                .target(name: "WCWeb3"),
                 .product(name: "BigInt", package: "BigInt"),
                 .product(name: "CryptoSwift", package: "CryptoSwift"),
             ],
@@ -62,7 +62,7 @@ let package = Package(
         .testTarget(
             name: "Web3Tests",
             dependencies: [
-                .target(name: "Web3"),
+                .target(name: "WCWeb3"),
                 .target(name: "Web3PromiseKit"),
                 .target(name: "Web3ContractABI"),
                 .product(name: "Quick", package: "Quick"),
